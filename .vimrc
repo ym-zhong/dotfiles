@@ -34,9 +34,6 @@ set softtabstop=4
 " 显示行号
 set number
 
-" 显示相对行号
-set relativenumber
-
 " 设置行宽
 set textwidth=80
 
@@ -88,3 +85,12 @@ nnoremap <Down>  :echoe "Use j"<CR>
 " inoremap <Right> <ESC>:echoe "Use l"<CR>
 " inoremap <Up>    <ESC>:echoe "Use k"<CR>
 " inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+" 启用256色
+set t_Co=256
+
+" 配色方案
+syntax enable
+set background=dark
+" colorscheme solarized
+colorscheme molokai
