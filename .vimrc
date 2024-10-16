@@ -1,3 +1,14 @@
+" 使用vim-plug(https://github.com/junegunn/vim-plug)管理插件
+call plug#begin()
+" 插件列表
+Plug 'maralla/completor.vim'
+call plug#end()
+" :PlugStatus
+" :PlugInstall to install plugins
+" :PlugUpdate  to update plugins
+" :PlugDiff    to review the changes from the last update
+" :PlugClean   to remove plugins no longer in the list
+
 " 不与Vi兼容
 set nocompatible
 
