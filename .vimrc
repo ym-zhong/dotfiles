@@ -1,7 +1,8 @@
 " 使用vim-plug(https://github.com/junegunn/vim-plug)管理插件
 call plug#begin()
 " 插件列表
-Plug 'maralla/completor.vim'
+Plug 'dense-analysis/ale'       " 语法检查
+Plug 'maralla/completor.vim'    " 代码补全
 call plug#end()
 " :PlugStatus
 " :PlugInstall to install plugins
