@@ -1,14 +1,18 @@
 " 使用vim-plug(https://github.com/junegunn/vim-plug)管理插件
 call plug#begin()
 " 插件列表
-Plug 'dense-analysis/ale'       " 语法检查
-Plug 'maralla/completor.vim'    " 代码补全
+Plug 'maralla/completor.vim'    " completion
+Plug 'dense-analysis/ale'       " check syntax
+Plug 'preservim/nerdtree'       " tree explorer
 call plug#end()
 " :PlugStatus
 " :PlugInstall to install plugins
 " :PlugUpdate  to update plugins
 " :PlugDiff    to review the changes from the last update
 " :PlugClean   to remove plugins no longer in the list
+
+" completor: provide path to the clang library file
+let g:clang_library_path='/usr/lib/llvm-10/lib/libclang-10.so.1'
 
 " 不与Vi兼容
 set nocompatible
@@ -104,5 +108,4 @@ set t_Co=256
 " 配色方案
 syntax enable
 set background=dark
-" colorscheme solarized
 colorscheme molokai
