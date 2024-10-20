@@ -11,8 +11,12 @@ call plug#end()
 " :PlugDiff    to review the changes from the last update
 " :PlugClean   to remove plugins no longer in the list
 
-" completor: provide path to the clang library file
-let g:clang_library_path='/usr/lib/llvm-10/lib/libclang-10.so.1'
+" completor: use clang for completion
+let g:completor_clang_binary = '/usr/bin/clang'
+" completion: minimun characters to trigger completors
+let g:completor_min_chars = 1
+" completor: time(ms) to wait before auto triggering completion popup
+let g:completor_completion_delay = 10
 
 " 不与Vi兼容
 set nocompatible
