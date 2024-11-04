@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'maralla/completor.vim'    " completion
 Plug 'dense-analysis/ale'       " check syntax
 Plug 'preservim/nerdtree'       " tree explorer
+Plug 'jiangmiao/auto-pairs'     " insert or delete in pairs
 call plug#end()
 " :PlugStatus
 " :PlugInstall to install plugins
