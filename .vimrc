@@ -57,9 +57,6 @@ set number
 " 设置行宽
 set textwidth=80
 
-" 显示状态栏
-set laststatus=2
-
 " 光标遇到括号时，自动高亮对应另一个括号
 set showmatch
 
@@ -109,7 +106,19 @@ nnoremap <Down>  :echoe "Use j"<CR>
 " 启用256色
 set t_Co=256
 
+" 总是显示状态栏
+set laststatus=2
+" 定制状态行
+set statusline=%1*\%<%.50F\             "显示文件名和文件路径
+set statusline+=%=%2*\%Y%m%r%h%w\ %*    "显示文件类型及文件状态
+set statusline+=%3*\%{&fenc}\ %*        "显示文件编码类型
+set statusline+=%4*\ row:%l,col:%c\ %*  "显示光标所在行和列
+set statusline+=%5*\%3p%%\%*            "显示光标前文本所占总文本的比例
+
 " 配色方案
 syntax enable
 set background=dark
 colorscheme molokai
+
+" 背景透明
+hi Normal ctermfg=252 ctermbg=none
