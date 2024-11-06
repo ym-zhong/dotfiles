@@ -5,6 +5,7 @@ Plug 'maralla/completor.vim'    " completion
 Plug 'dense-analysis/ale'       " check syntax
 Plug 'preservim/nerdtree'       " tree explorer
 Plug 'jiangmiao/auto-pairs'     " insert or delete in pairs
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
 call plug#end()
 " :PlugStatus
 " :PlugInstall to install plugins
