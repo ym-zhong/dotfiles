@@ -122,4 +122,11 @@ set background=dark
 colorscheme molokai
 
 " 背景透明
-hi Normal ctermfg=252 ctermbg=none
+hi Normal ctermbg=none
+
+" 至少有两个标签页时才显示标签栏
+set showtabline=1
+" 设置标签栏颜色
+hi TabLineSel term=bold cterm=bold ctermfg=Green
+hi TabLine term=underline cterm=underline ctermfg=Cyan ctermbg=none
+hi TabLineFill term=none cterm=none
