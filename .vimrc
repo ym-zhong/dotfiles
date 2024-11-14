@@ -2,6 +2,7 @@
 call plug#begin()
 " 插件列表
 Plug 'maralla/completor.vim'    " completion
+Plug 'davidhalter/jedi-vim'     " Python autocompletion
 Plug 'dense-analysis/ale'       " check syntax
 Plug 'preservim/nerdtree'       " tree explorer
 Plug 'jiangmiao/auto-pairs'     " insert or delete in pairs
@@ -13,9 +14,9 @@ call plug#end()
 " :PlugDiff    to review the changes from the last update
 " :PlugClean   to remove plugins no longer in the list
 
-" completor: use clang for completion
+" completor: use clang for c/c++ completion
 let g:completor_clang_binary = '/usr/bin/clang'
-" completion: minimun characters to trigger completors
+" completor: minimun characters to trigger completors
 let g:completor_min_chars = 1
 " completor: time(ms) to wait before auto triggering completion popup
 let g:completor_completion_delay = 10
