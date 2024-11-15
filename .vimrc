@@ -21,6 +21,9 @@ let g:completor_min_chars = 1
 " completor: time(ms) to wait before auto triggering completion popup
 let g:completor_completion_delay = 10
 
+" jedi: hidden function call signatures
+let g:jedi#show_call_signatures = "0"
+
 " 不与Vi兼容
 set nocompatible
 
