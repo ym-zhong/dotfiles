@@ -2,10 +2,10 @@
 call plug#begin()
 " 插件列表
 Plug 'maralla/completor.vim'                " completion
-Plug 'octol/vim-cpp-enhanced-highlight'     " syntax highlighting for C++
-Plug 'dense-analysis/ale'                   " check syntax
-Plug 'preservim/nerdtree'                   " tree explorer
 Plug 'jiangmiao/auto-pairs'                 " insert or delete in pairs
+Plug 'dense-analysis/ale'                   " check syntax
+Plug 'octol/vim-cpp-enhanced-highlight'     " syntax highlighting for C++
+Plug 'preservim/nerdtree'                   " tree explorer
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
 call plug#end()
 " :PlugStatus
