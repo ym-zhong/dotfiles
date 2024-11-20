@@ -1,10 +1,11 @@
 " 使用vim-plug(https://github.com/junegunn/vim-plug)管理插件
 call plug#begin()
 " 插件列表
-Plug 'maralla/completor.vim'    " completion
-Plug 'dense-analysis/ale'       " check syntax
-Plug 'preservim/nerdtree'       " tree explorer
-Plug 'jiangmiao/auto-pairs'     " insert or delete in pairs
+Plug 'maralla/completor.vim'                " completion
+Plug 'octol/vim-cpp-enhanced-highlight'     " syntax highlighting for C++
+Plug 'dense-analysis/ale'                   " check syntax
+Plug 'preservim/nerdtree'                   " tree explorer
+Plug 'jiangmiao/auto-pairs'                 " insert or delete in pairs
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
 call plug#end()
 " :PlugStatus
@@ -21,6 +22,14 @@ let g:completor_python_binary = '/usr/bin/python'
 let g:completor_min_chars = 1
 " completor: time(ms) to wait before auto triggering completion popup
 let g:completor_completion_delay = 1
+
+" vim-cpp-enhanced-highlight: enable
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_concepts_highlight = 1
 
 " 不与Vi兼容
 set nocompatible
