@@ -1,6 +1,7 @@
 " 使用vim-plug(https://github.com/junegunn/vim-plug)管理插件
 call plug#begin()
 " 插件列表
+Plug 'github/copilot.vim'                   " GitHub Copilot
 Plug 'maralla/completor.vim'                " completion
 Plug 'jiangmiao/auto-pairs'                 " insert or delete in pairs
 Plug 'dense-analysis/ale'                   " check syntax
