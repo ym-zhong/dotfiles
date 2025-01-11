@@ -1,13 +1,10 @@
 " 使用vim-plug(https://github.com/junegunn/vim-plug)管理插件
 call plug#begin()
 " 插件列表
-Plug 'github/copilot.vim'                   " GitHub Copilot
-Plug 'maralla/completor.vim'                " completion
+Plug 'ycm-core/YouCompleteMe'               " code-completion
 Plug 'jiangmiao/auto-pairs'                 " insert or delete in pairs
-Plug 'dense-analysis/ale'                   " check syntax
 Plug 'octol/vim-cpp-enhanced-highlight'     " syntax highlighting for C++
 Plug 'preservim/nerdtree'                   " tree explorer
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
 call plug#end()
 " :PlugStatus
 " :PlugInstall to install plugins
@@ -15,14 +12,13 @@ call plug#end()
 " :PlugDiff    to review the changes from the last update
 " :PlugClean   to remove plugins no longer in the list
 
-" completor: use clang for c/c++ completion
-let g:completor_clang_binary = '/usr/bin/clang'
-" completor: use jedi for python completion
-let g:completor_python_binary = '/usr/bin/python'
-" completor: minimun characters to trigger completors
-let g:completor_min_chars = 1
-" completor: time(ms) to wait before auto triggering completion popup
-let g:completor_completion_delay = 1
+" YCM
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_cache_omnifunc = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_show_diagnostics_ui = 1
+let g:ycm_filepath_completion_use_working_dir = 1
 
 " vim-cpp-enhanced-highlight: enable
 let g:cpp_class_scope_highlight = 1
