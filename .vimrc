@@ -5,6 +5,7 @@ Plug 'ycm-core/YouCompleteMe'               " code-completion
 Plug 'jiangmiao/auto-pairs'                 " insert or delete in pairs
 Plug 'octol/vim-cpp-enhanced-highlight'     " syntax highlighting for C++
 Plug 'preservim/nerdtree'                   " tree explorer
+Plug 'tomasr/molokai'                       " color scheme
 call plug#end()
 " :PlugStatus
 " :PlugInstall to install plugins
