@@ -65,9 +65,6 @@ set softtabstop=4
 " 显示行号
 set number
 
-" 设置行宽
-set textwidth=80
-
 " 光标遇到括号时，自动高亮对应另一个括号
 set showmatch
 
